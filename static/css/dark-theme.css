@@ -1,0 +1,172 @@
+/* Dark Theme CSS Variables and Styles */
+[data-theme="dark"] {
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-secondary: linear-gradient(135deg, #00d4ff 0%, #7b61ff 100%);
+    --shadow-glow: 0 0 20px rgba(0, 212, 255, 0.3);
+    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --overlay-dark: rgba(0, 0, 0, 0.7);
+}
+
+/* Dark theme specific styles */
+[data-theme="dark"] .card {
+    background: linear-gradient(145deg, #1e2433, #1a1f2e);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+[data-theme="dark"] .navbar {
+    background: rgba(10, 14, 23, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+[data-theme="dark"] .btn-outline-light {
+    border-color: rgba(0, 212, 255, 0.5);
+    color: #00d4ff;
+}
+
+[data-theme="dark"] .btn-outline-light:hover {
+    background: rgba(0, 212, 255, 0.1);
+    border-color: #00d4ff;
+    color: #00d4ff;
+}
+
+[data-theme="dark"] .form-control {
+    background: #1a1f2e;
+    border-color: #2a2f3e;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .form-control:focus {
+    background: #1e2433;
+    border-color: #00d4ff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 212, 255, 0.25);
+    color: #ffffff;
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background: #1a1f2e;
+    border: 1px solid #2a2f3e;
+}
+
+[data-theme="dark"] .dropdown-item {
+    color: #b0b8c8;
+}
+
+[data-theme="dark"] .dropdown-item:hover {
+    background: #1e2433;
+    color: #00d4ff;
+}
+
+[data-theme="dark"] .alert {
+    background: #1a1f2e;
+    border: 1px solid #2a2f3e;
+}
+
+[data-theme="dark"] .table {
+    color: #b0b8c8;
+}
+
+[data-theme="dark"] .table-hover tbody tr:hover {
+    background: rgba(0, 212, 255, 0.1);
+    color: #00d4ff;
+}
+
+[data-theme="dark"] .modal-content {
+    background: #1a1f2e;
+    border: 1px solid #2a2f3e;
+}
+
+[data-theme="dark"] .stat-card {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(123, 97, 255, 0.1));
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+[data-theme="dark"] .tournament-badge {
+    background: rgba(0, 212, 255, 0.2);
+    color: #00d4ff;
+    border: 1px solid #00d4ff;
+}
+
+[data-theme="dark"] .search-box {
+    background: #1a1f2e;
+    border: 2px solid #2a2f3e;
+}
+
+[data-theme="dark"] .search-box:focus {
+    border-color: #00d4ff;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+[data-theme="dark"] .nav-pills .nav-link.active {
+    background: linear-gradient(135deg, #00d4ff, #7b61ff);
+}
+
+[data-theme="dark"] .pagination .page-link {
+    background: #1a1f2e;
+    border-color: #2a2f3e;
+    color: #b0b8c8;
+}
+
+[data-theme="dark"] .pagination .page-item.active .page-link {
+    background: linear-gradient(135deg, #00d4ff, #7b61ff);
+    border-color: transparent;
+}
+
+[data-theme="dark"] .footer {
+    background: linear-gradient(to right, #0a0e17, #1a1f2e);
+    border-top: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+[data-theme="dark"] .loading-spinner {
+    border-color: #2a2f3e;
+    border-top-color: #00d4ff;
+}
+
+[data-theme="dark"] .empty-state svg {
+    color: #2a2f3e;
+}
+
+[data-theme="dark"] .badge {
+    border: 1px solid transparent;
+}
+
+[data-theme="dark"] .list-group-item {
+    background: #1a1f2e;
+    border-color: #2a2f3e;
+    color: #b0b8c8;
+}
+
+[data-theme="dark"] .list-group-item:hover {
+    background: #1e2433;
+}
+
+[data-theme="dark"] .input-group-text {
+    background: #1a1f2e;
+    border-color: #2a2f3e;
+    color: #b0b8c8;
+}
+
+/* Neon effects */
+[data-theme="dark"] .neon-text {
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5),
+                 0 0 20px rgba(0, 212, 255, 0.3),
+                 0 0 30px rgba(0, 212, 255, 0.1);
+}
+
+[data-theme="dark"] .neon-border {
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3),
+                inset 0 0 10px rgba(0, 212, 255, 0.1);
+}
+
+/* Animated background */
+[data-theme="dark"] .animated-bg {
+    background: linear-gradient(270deg, #0a0e17, #1a1f2e, #0a0e17);
+    background-size: 600% 600%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
